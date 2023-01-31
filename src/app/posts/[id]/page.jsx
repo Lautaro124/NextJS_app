@@ -1,11 +1,5 @@
-import React from 'react'
-
-const Post = ({ params }) => {
-  const { id } = params
-
-  return (
-    <div>Post {id}</div>
-  )
+const PostPage = () => {
+  return null
 }
 
-export default Post
+export default PostPage
