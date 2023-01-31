@@ -1,5 +1,6 @@
 import React from 'react'
 import Link from 'next/link'
+import style from './navigation.module.css'
 
 const headerLinks = [
   {
@@ -9,14 +10,18 @@ const headerLinks = [
   {
     label: 'About',
     route: '/about'
+  },
+  {
+    label: 'Posts',
+    route: '/posts'
   }
 ]
 
 const Navigation = () => {
   return (
-    <header>
+    <header className={style.header}>
       <nav>
-        <ul>
+        <ul className={style.navigation}>
           {headerLinks.map(({ label, route }) => (
             <li key={label}>
               <Link href={route}>
